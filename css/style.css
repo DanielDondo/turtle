@@ -1411,9 +1411,20 @@ h6 {
 .banner__item._top-item {
   animation: line-text 25s linear infinite reverse;
 }
+@media (max-width: 29.99875em) {
+  .banner__item._top-item {
+    animation: line-text 15s linear infinite reverse;
+  }
+}
 .banner__item._bottom-item {
   -webkit-animation: line-text 25s linear infinite;
           animation: line-text 25s linear infinite;
+}
+@media (max-width: 29.99875em) {
+  .banner__item._bottom-item {
+    -webkit-animation: line-text 15s linear infinite;
+            animation: line-text 15s linear infinite;
+  }
 }
 .banner__text {
   font-weight: 700;
@@ -5966,17 +5977,70 @@ h6 {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   display: block;
-  width: 407px;
-  height: 407px;
   border-radius: 50%;
   background: radial-gradient(108.54% 78.47% at 25.87% 0%, #f08c30 0%, #ffca91 30.21%, #f7b953 100%);
   -webkit-filter: blur(175px);
           filter: blur(175px);
+  z-index: -1;
+}
+@media (min-width: 78.125em) {
+  .footer__decor {
+    width: 25.4375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 78.125em) {
+  @supports (width: clamp( 17.4375rem , 14.684811828rem  +  13.7634408602vw , 25.4375rem )) {
+    .footer__decor {
+      width: clamp( 17.4375rem , 14.684811828rem  +  13.7634408602vw , 25.4375rem );
+    }
+  }
+  @supports not (width: clamp( 17.4375rem , 14.684811828rem  +  13.7634408602vw , 25.4375rem )) {
+    .footer__decor {
+      width: calc(
+            17.4375rem + 8 * (100vw - 20rem) / 58.125
+         );
+    }
+  }
+}
+@media (max-width: 20em) {
+  .footer__decor {
+    width: 17.4375rem;
+  }
+}
+@media (min-width: 78.125em) {
+  .footer__decor {
+    height: 25.4375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 78.125em) {
+  @supports (height: clamp( 17.4375rem , 14.684811828rem  +  13.7634408602vw , 25.4375rem )) {
+    .footer__decor {
+      height: clamp( 17.4375rem , 14.684811828rem  +  13.7634408602vw , 25.4375rem );
+    }
+  }
+  @supports not (height: clamp( 17.4375rem , 14.684811828rem  +  13.7634408602vw , 25.4375rem )) {
+    .footer__decor {
+      height: calc(
+            17.4375rem + 8 * (100vw - 20rem) / 58.125
+         );
+    }
+  }
+}
+@media (max-width: 20em) {
+  .footer__decor {
+    height: 17.4375rem;
+  }
 }
 @media (min-width: 78.125em) {
   .footer__decor {
     -webkit-animation: light 10s linear infinite;
             animation: light 10s linear infinite;
+  }
+}
+@media (max-width: 29.99875em) {
+  .footer__decor {
+    -webkit-filter: blur(200px);
+            filter: blur(200px);
   }
 }
 

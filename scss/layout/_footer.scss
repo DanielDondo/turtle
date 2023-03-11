@@ -36,8 +36,8 @@
       transform: translate(0%, 0%);
 
       display: block;
-      width: 407px;
-      height: 407px;
+      @include adaptiveValue("width", 407, 279);
+      @include adaptiveValue("height", 407, 279);
       border-radius: 50%;
 
       background: radial-gradient(108.54% 78.47% at 25.87% 0%, #f08c30 0%, #ffca91 30.21%, #f7b953 100%);
@@ -45,6 +45,10 @@
       @media (min-width: $pc) {
          animation: light 10s linear infinite;
       }
+      @media (max-width: $mobileSmall) {
+         filter: blur(200px);
+      }
+      z-index: -1;
    }
 }
 .social-list {
