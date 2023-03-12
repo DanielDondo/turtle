@@ -5,6 +5,7 @@
 //&display=swap - додати при підключенні через плагін
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap);
+
 // Підключити, якщо є локальні файли шрифтів
 //@import "fonts/_fonts";
 
@@ -33,15 +34,17 @@ $background-color: #010101;
 @import "./utils/variable";
 //======================================== Підключення плейсхолдерів ============================================
 @import "./utils/placeholder";
+//======================================== Підключення components ===============================================
+@import "./common/components.scss";
+@import "./common/button";
+
+//===============================================================================================================
+@import "./layout/header";
+@import "./layout/footer";
+
 //======================================== Підключення сторінок =================================================
 @import "./page/index";
 @import "./page/fraternity";
 @import "./page/roadmap";
 @import "./page/season";
 //===============================================================================================================
-@import "./layout/header";
-@import "./layout/footer";
-
-//======================================== Підключення components ===============================================
-@import "./components/button";
-@import "./components/common-components";

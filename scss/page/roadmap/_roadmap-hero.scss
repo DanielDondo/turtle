@@ -4,7 +4,8 @@
    // .roadmap-hero__container
    &__container {
       position: relative;
-      @media (max-width: $mobileSmall) {
+      //===============================================================================================================
+      @media screen and (max-width: $mobileSmall) {
          display: flex;
          flex-direction: column;
          align-items: center;
@@ -18,17 +19,17 @@
       align-items: center;
       gap: rem(175);
 
-      @media (max-width: $mobileSmall) {
+      @include adaptiveValue("padding-top", 114, 0, 0, 1230, 479.98);
+      @include adaptiveValue("padding-bottom", 114, 0, 0, 1230, 479.98);
+      z-index: 1;
+      //===============================================================================================================
+      @media screen and (max-width: $mobileSmall) {
          flex-direction: column-reverse;
          @include adaptiveValue("gap", 100, 50);
          &:not(:last-child) {
             @include adaptiveValue("margin-bottom", 100, 50);
          }
       }
-
-      @include adaptiveValue("padding-top", 114, 0, 0, 1230, 479.98);
-      @include adaptiveValue("padding-bottom", 114, 0, 0, 1230, 479.98);
-      z-index: 1;
    }
    // .roadmap-hero__button
    &__button {
@@ -45,12 +46,12 @@
          display: block;
          @include adaptiveValue("width", 92, 54);
          @include adaptiveValue("height", 11, 7);
-         background-color: #ffffff;
+         background-color: $mainColor;
       }
    }
    // .roadmap-hero__picture
    &__picture {
-      @media (min-width: $mobileSmall) {
+      @media screen and (min-width: $mobileSmall) {
          position: absolute;
          top: 50%;
          left: 50%;
@@ -59,9 +60,12 @@
          @include adaptiveValue("height", 734, 187);
          z-index: -1;
       }
-
+      //===============================================================================================================
       img {
-         @media (min-width: $mobileSmall) {
+         max-width: 100%;
+         height: auto;
+         //===============================================================================================================
+         @media screen and (min-width: $mobileSmall) {
             position: absolute;
             top: 0;
             left: 0;
@@ -69,8 +73,6 @@
             height: 100%;
             object-fit: cover;
          }
-         max-width: 100%;
-         height: auto;
       }
    }
    // .roadmap-hero__decor
@@ -86,17 +88,20 @@
    &__bottom {
       filter: blur(200px);
       &.-t {
-         @media (min-width: $pc) {
+         @media screen and (min-width: $pc) {
             animation: light-t 10s linear infinite;
          }
       }
-      @media (max-width: $tablet) {
+      //===============================================================================================================
+      @media screen and (max-width: $tablet) {
          filter: blur(120px);
       }
-      @media (max-width: $mobile) {
+      //===============================================================================================================
+      @media screen and (max-width: $mobile) {
          filter: blur(80px);
       }
-      @media (max-width: $mobileSmall) {
+      //===============================================================================================================
+      @media screen and (max-width: $mobileSmall) {
          display: block;
          border-radius: 50%;
          filter: blur(50px);
@@ -109,17 +114,19 @@
       bottom: 0;
       @include adaptiveValue("width", 221, 95);
       @include adaptiveValue("height", 221, 95);
-      @media (max-width: $mobileSmall) {
+      z-index: -2;
+      //===============================================================================================================
+      @media screen and (max-width: $mobileSmall) {
          @include adaptiveValue("bottom", 0, -80);
       }
-      z-index: -2;
    }
 
    // .decor-hero__left
    &__left {
       left: 0;
       transform: translate(-50%, 0%);
-      @media (max-width: $mobileSmall) {
+      //===============================================================================================================
+      @media screen and (max-width: $mobileSmall) {
          transform: translate(0%, 0%);
       }
    }
@@ -127,7 +134,8 @@
    &__right {
       right: 0;
       transform: translate(50%, 0%);
-      @media (max-width: $mobileSmall) {
+      //===============================================================================================================
+      @media screen and (max-width: $mobileSmall) {
          transform: translate(0%, 0%);
       }
    }

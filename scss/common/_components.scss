@@ -1,3 +1,4 @@
+//===============================================================================================================
 .main-title {
    font-family: "Oswald", sans-serif;
    font-weight: 700;
@@ -39,6 +40,12 @@
    // .season-title__button
    &__button {
       color: $mainColor;
+      transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $link-color;
+         }
+      }
    }
    // .season-title__icon
    &__icon {
@@ -56,24 +63,22 @@
       text-transform: uppercase;
    }
 }
-
-//===============================================================================================================
 .season-items {
    display: grid;
    align-items: center;
    grid-template-columns: repeat(4, 1fr);
    @include adaptiveValue("gap", 40, 15, 0, 1230, 767.98);
 
-   @media (max-width: $mobile) {
+   @media screen and (max-width: $mobile) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
    }
-   @media (max-width: $mobileSmall) {
+   @media screen and (max-width: $mobileSmall) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
    }
-   @media (max-width: em(360.98)) {
+   @media screen and (max-width: em(360.98)) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
    }
@@ -84,14 +89,17 @@
       border-radius: rem(20);
       @include adaptiveValue("width", 275, 170, 0, 1230, 767.98);
       @include adaptiveValue("height", 275, 170, 0, 1230, 767.98);
-      @media (max-width: $mobile) {
+      //===============================================================================================================
+      @media screen and (max-width: $mobile) {
          @include adaptiveValue("width", 275, 200, 0, 1230, 360.98);
          @include adaptiveValue("height", 275, 200, 0, 1230, 360.98);
       }
-      @media (max-width: em(360.98)) {
+      //===============================================================================================================
+      @media screen and (max-width: em(360.98)) {
          width: 100%;
          height: auto;
       }
+      //===============================================================================================================
       img {
          border-radius: rem(20);
          max-width: 100%;
@@ -99,3 +107,4 @@
       }
    }
 }
+//===============================================================================================================

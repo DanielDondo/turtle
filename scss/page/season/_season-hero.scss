@@ -8,7 +8,7 @@
       align-items: center;
       gap: rem(10);
 
-      @media (max-width: $mobile) {
+      @media screen and (max-width: $mobile) {
          display: flex;
          flex-direction: column;
          justify-content: center;
@@ -24,10 +24,12 @@
          content: "";
          bottom: -10px;
          left: 0;
-         @media (max-width: $mobile) {
+         //===============================================================================================================
+         @media screen and (max-width: $mobile) {
             left: 50%;
             transform: translate(-50%, 0%);
          }
+         //===============================================================================================================
          display: block;
          @include adaptiveValue("width", 92, 54);
          @include adaptiveValue("height", 11, 7);
@@ -50,24 +52,25 @@
       @include adaptiveValue("font-size", 32, 24);
       line-height: math.div(48, 32);
       letter-spacing: 0.24em;
-      color: #eab359;
+      color: $link-color;
    }
    // .season-hero__subtext
    &__subtext {
       font-weight: 400;
       @include adaptiveValue("font-size", 24, 20);
       line-height: math.div(36, 24);
-      color: #d2d3d8;
+      color: $text-color;
    }
    // .season-hero__button
    &__button {
       position: absolute;
       @include adaptiveValue("bottom", -160, -120);
       right: 0;
-      @media (max-width: $pc) {
+      transform: translate(0%, 0%);
+      //===============================================================================================================
+      @media screen and (max-width: $pc) {
          @include adaptiveValue("right", 30, 15);
       }
-      transform: translate(0%, 0%);
    }
    // .season-hero__decor
    &__decor {
@@ -77,14 +80,15 @@
       transform: translate(-50%, 0%);
 
       display: none;
-      @media (min-width: $mobile) {
-         display: block;
-      }
 
       @include adaptiveValue("width", 208, 150, 0, 1230, 767.98);
       @include adaptiveValue("height", 208, 150, 0, 1230, 767.98);
       background: linear-gradient(90deg, #eab359 0%, #f0e591 20.21%, #eab454 100%);
       filter: blur(100px);
       z-index: -1;
+      //===============================================================================================================
+      @media screen and (min-width: $mobile) {
+         display: block;
+      }
    }
 }

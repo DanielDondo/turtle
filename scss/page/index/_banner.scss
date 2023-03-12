@@ -49,13 +49,15 @@
 
       &._top-item {
          animation: line-text 25s linear infinite reverse;
-         @media (max-width: $mobileSmall) {
+         //===============================================================================================================
+         @media screen and (max-width: $mobileSmall) {
             animation: line-text 15s linear infinite reverse;
          }
       }
       &._bottom-item {
          animation: line-text 25s linear infinite;
-         @media (max-width: $mobileSmall) {
+         //===============================================================================================================
+         @media screen and (max-width: $mobileSmall) {
             animation: line-text 15s linear infinite;
          }
       }

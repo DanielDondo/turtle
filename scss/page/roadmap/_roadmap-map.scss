@@ -27,10 +27,11 @@
    // .map__item
    &__item {
       position: relative;
-      &::before {
-         content: "";
+      .circle {
          position: absolute;
          top: 0;
+         width: rem(30);
+         height: rem(30);
          @include adaptiveValue("left", -38, -31);
          transform: translate(0%, 0%);
          @include adaptiveValue("width", 28, 14);
@@ -141,11 +142,17 @@
    &__line {
       @include adaptiveValue("width", 92, 54);
       @include adaptiveValue("height", 11, 7);
-      background-color: #ffffff;
+      background-color: $mainColor;
    }
    // .header-map__button
    &__button {
-      color: #ffffff;
+      color: $mainColor;
+      transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $link-color;
+         }
+      }
    }
    // .header-map__icon
    &__icon {
@@ -174,7 +181,6 @@
    &__iron {
       position: absolute;
       top: 50%;
-      // left: 64px;
       @include adaptiveValue("left", 64, 0, 0, 1230, 768.98);
       transform: translate(0%, -50%);
 
@@ -190,3 +196,13 @@
    }
 }
 //===============================================================================================================
+
+.line {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   transition: all 0.5s ease 0s;
+   background-color: #fff;
+}

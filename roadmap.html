@@ -5,8 +5,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css">
    <link rel="shortcut icon" href="./favicon-turtle.ico">
+   <link rel="stylesheet" href="css/style.min.css">
+
    <title>ROADMAP | DEMO</title>
 </head>
 
@@ -32,7 +33,7 @@
             <div class="header__functional">
                <button data-da=".burger__navigation,767.98," type="button" class="header__button">
                   <svg>
-                     <use xlink:href="./img/icons/sprite.svg#icon-purse"></use>
+                     <use xlink:href="./img/sprite.svg#icon-purse"></use>
                   </svg>
                   BUY NOW
                </button>
@@ -50,32 +51,34 @@
                </div>
                <picture class="roadmap-hero__picture">
                   <source
-                     srcset="./img/roadmap/roadmap__hero/roadmap-hero-turtles-mobile.png 1x, ./img/roadmap/roadmap__hero/roadmap-hero-turtles-mobile@2x.png 2x"
+                     srcset="./img/roadmap/roadmap-hero-turtles-mobile.png 1x, ./img/roadmap/roadmap-hero-turtles-mobile@2x.png 2x"
                      media="(max-width: 479.98px)">
-                  <img src="./img/roadmap/roadmap__hero/roadmap-hero.png"
-                     srcset="./img/roadmap/roadmap__hero/roadmap-hero@2x.png" alt="roadmap picture">
+                  <img src="./img/roadmap/roadmap-hero.png" srcset="./img/roadmap/roadmap-hero@2x.png"
+                     alt="roadmap picture">
                </picture>
                <div class="roadmap-hero__decor decor-hero">
                   <span class="decor-hero__top"></span>
                   <span class="decor-hero__bottom -t"></span>
-                  <img class="decor-hero__left" src="./img/roadmap/roadmap__hero/roadmap.png"
-                     srcset="./img/roadmap/roadmap__hero/roadmap@2x.png" alt="picture">
-                  <img class="decor-hero__right" src="./img/roadmap/roadmap__hero/roadmap.png"
-                     srcset="./img/roadmap/roadmap__hero/roadmap@2x.png" alt="picture">
+                  <img class="decor-hero__left" src="./img/roadmap/roadmap.png" srcset="./img/roadmap/roadmap@2x.png"
+                     alt="picture">
+                  <img class="decor-hero__right" src="./img/roadmap/roadmap.png" srcset="./img/roadmap/roadmap@2x.png"
+                     alt="picture">
                </div>
             </div>
          </section>
          <div class="roadmap__map map">
             <div class="map__container">
                <ul class="map__list">
+                  <div class="line"></div>
                   <li class="map__item">
                      <section class="map__section section-map">
+                        <div class="circle"></div>
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
                               <button type="button" class="header-map__button">
                                  <svg class="header-map__icon">
-                                    <use xlink:href="./img/icons/sprite.svg#icon-arrow-bottom"></use>
+                                    <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
                               </button>
                            </header>
@@ -84,44 +87,44 @@
                            <a href="./season.html" class="section-map__button">
                               Live Now
                               <svg class="section-map__icon">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-arrow-right"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
                               </svg>
                            </a>
                         </div>
                         <ul class="section-map__list list-map">
                            <li class="list-map__item _active-color">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Freshman frat party</p>
                            </li>
                            <li class="list-map__item _active-color">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Wet and Wild Pool Party</p>
                            </li>
                            <li class="list-map__item _active-color">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">420 Blaze</p>
                            </li>
                            <li class="list-map__item _active-color">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Spring Break</p>
                            </li>
                            <li class="list-map__item _active-color">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">End of Year</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron" width="32" height="32">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Burning Turtle Festival (Rare Edition)</p>
                            </li>
@@ -130,12 +133,13 @@
                   </li>
                   <li class="map__item">
                      <section class="map__section section-map">
+                        <div class="circle"></div>
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
                               <button type="button" class="header-map__button">
                                  <svg class="header-map__icon">
-                                    <use xlink:href="./img/icons/sprite.svg#icon-arrow-bottom"></use>
+                                    <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
                               </button>
                            </header>
@@ -145,31 +149,31 @@
                         <ul class="section-map__list list-map">
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Toga Party</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Beer Pong Championships</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Keg Stand Contest</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Someone Called the Cops!</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Mardi Gras</p>
                            </li>
@@ -178,12 +182,13 @@
                   </li>
                   <li class="map__item">
                      <section class="map__section section-map">
+                        <div class="circle"></div>
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
                               <button type="button" class="header-map__button">
                                  <svg class="header-map__icon">
-                                    <use xlink:href="./img/icons/sprite.svg#icon-arrow-bottom"></use>
+                                    <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
                               </button>
                            </header>
@@ -193,31 +198,31 @@
                         <ul class="section-map__list list-map">
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Thrift Shop Party</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Sport Jerseys</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Beer Bong Festival</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Beer Pong Championship</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Paint Party</p>
                            </li>
@@ -226,12 +231,13 @@
                   </li>
                   <li class="map__item">
                      <section class="map__section section-map">
+                        <div class="circle"></div>
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
                               <button type="button" class="header-map__button">
                                  <svg class="header-map__icon">
-                                    <use xlink:href="./img/icons/sprite.svg#icon-arrow-bottom"></use>
+                                    <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
                               </button>
                            </header>
@@ -241,31 +247,31 @@
                         <ul class="section-map__list list-map">
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Bar Crawl</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Beer Pong Championship</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Exam Results Party</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Trip to Vegas</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Homecoming</p>
                            </li>
@@ -274,12 +280,13 @@
                   </li>
                   <li class="map__item">
                      <section class="map__section section-map">
+                        <div class="circle"></div>
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
                               <button type="button" class="header-map__button">
                                  <svg class="header-map__icon">
-                                    <use xlink:href="./img/icons/sprite.svg#icon-arrow-bottom"></use>
+                                    <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
                               </button>
                            </header>
@@ -289,13 +296,13 @@
                         <ul class="section-map__list list-map">
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Team Photo</p>
                            </li>
                            <li class="list-map__item">
                               <svg class="list-map__iron">
-                                 <use xlink:href="./img/icons/sprite.svg#icon-point"></use>
+                                 <use xlink:href="./img/sprite.svg#icon-point"></use>
                               </svg>
                               <p class="list-map__text">Graduation Party</p>
                            </li>
@@ -313,16 +320,16 @@
                   </h2>
                   <a href="./roadmap.html" class="invitation__button-link">
                      <svg class="invitation__icon">
-                        <use xlink:href="./img/icons/sprite.svg#icon-arrow-curved"></use>
+                        <use xlink:href="./img/sprite.svg#icon-arrow-curved"></use>
                      </svg>
                      VIEW ROADMAP
                   </a>
                   <picture class="invitation__picture">
                      <source
-                        srcset="./img/home/section__invitation/invitation-mobile.png 1x, ./img/home/section__invitation/invitation-mobile@2x.png 2x"
+                        srcset="./img/home/home__invitation/invitation-mobile.png 1x, ./img/home/home__invitation/invitation-mobile@2x.png 2x"
                         media="(max-width: 479.98px)">
-                     <img src="./img/home/section__invitation/invitation.png"
-                        srcset="./img/home/section__invitation/invitation@2x.png" alt="">
+                     <img src="./img/home/home__invitation/invitation.png"
+                        srcset="./img/home/home__invitation/invitation@2x.png" alt="">
                   </picture>
                   <button type="button" class="invitation__button button-buy">BUY NOW</button>
                </div>
@@ -343,36 +350,37 @@
             <a href="./index.html" class="footer__logo"><img src="./img/logo-footer.svg" alt="logo footer"></a>
             <ul class="footer__social-list social-list">
                <li class="social-list__item">
-                  <a href="" class="social-list__link">
+                  <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" class="social-list__link">
                      <svg>
-                        <use xlink:href="./img/icons/sprite.svg#icon-discord"></use>
+                        <use xlink:href="./img/sprite.svg#icon-discord"></use>
                      </svg>
                   </a>
                </li>
                <li class="social-list__item">
-                  <a href="" class="social-list__link">
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-list__link">
                      <svg>
-                        <use xlink:href="./img/icons/sprite.svg#icon-twitter"></use>
+                        <use xlink:href="./img/sprite.svg#icon-twitter"></use>
                      </svg>
                   </a>
                </li>
                <li class="social-list__item">
-                  <a href="" class="social-list__link">
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                     class="social-list__link">
                      <svg>
-                        <use xlink:href="./img/icons/sprite.svg#icon-instagram"></use>
+                        <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                      </svg>
                   </a>
                </li>
                <li class="social-list__item">
-                  <a href="" class="social-list__link">
+                  <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-list__link">
                      <svg>
-                        <use xlink:href="./img/icons/sprite.svg#icon-tiktok"></use>
+                        <use xlink:href="./img/sprite.svg#icon-tiktok"></use>
                      </svg>
                   </a>
                </li>
             </ul>
             <p class="footer__text">
-               2022 . All Right Reserved
+               2023 . All Right Reserved
             </p>
             <span class="footer__decor"></span>
          </div>

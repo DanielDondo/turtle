@@ -89,12 +89,6 @@
       top: 0;
       right: 0;
       transform: translate(50%, -50%);
-      @media (max-width: $mobile) {
-         filter: blur(100px);
-      }
-      @media (max-width: $mobileSmall) {
-         filter: blur(90px);
-      }
       pointer-events: none;
 
       display: block;
@@ -103,8 +97,17 @@
       border-radius: 50%;
       background: linear-gradient(90deg, #eab359 0%, #f0e591 20.21%, #eab454 100%);
       filter: blur(150px);
-      @media (min-width: $pc) {
+      //===============================================================================================================
+      @media screen and (min-width: $pc) {
          animation: light 10s linear infinite;
+      }
+      //===============================================================================================================
+      @media screen and (max-width: $mobile) {
+         filter: blur(100px);
+      }
+      //===============================================================================================================
+      @media screen and (max-width: $mobileSmall) {
+         filter: blur(90px);
       }
    }
    // .decor-description__bottom
@@ -120,20 +123,22 @@
       @include adaptiveValue("height", 270, 200);
       background: linear-gradient(90deg, #eab359 0%, #f0e591 20.21%, #eab454 100%);
       filter: blur(125px);
-      @media (min-width: $pc) {
+      z-index: -1;
+      //===============================================================================================================
+      @media screen and (min-width: $pc) {
          animation: light-hero 10s linear infinite;
       }
-      z-index: -1;
    }
    // .decor-description__button
    &__button {
       color: $link-color;
-      transition: all 0.5s ease 0s;
+      transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
       svg {
          @include adaptiveValue("width", 93, 70);
          @include adaptiveValue("height", 86, 68);
          fill: currentColor;
       }
+      //===============================================================================================================
       @media (any-hover: hover) {
          &:hover {
             transform: scale(1.09);
