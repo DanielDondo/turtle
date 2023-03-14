@@ -24,10 +24,10 @@
                </button>
                <nav class="burger__navigation">
                   <ul class="burger__list">
-                     <li class="burger__item"><a href="./index.html" class="burger__link _open">HOME</a></li>
+                     <li class="burger__item"><a href="./index.html" class="burger__link">HOME</a></li>
                      <li class="burger__item"><a href="./fraternity.html" class="burger__link">MEET THE FRATERNITY</a>
                      </li>
-                     <li class="burger__item"><a href="./roadmap.html" class="burger__link">ROADMAP</a></li>
+                     <li class="burger__item"><a href="./roadmap.html" class="burger__link _open">ROADMAP</a></li>
                      <li class="burger__item"><a href="./season.html" class="burger__link">SEASON 1</a></li>
                   </ul>
                </nav>
@@ -53,18 +53,29 @@
                </div>
                <picture class="roadmap-hero__picture">
                   <source
+                     srcset="./img/roadmap/roadmap-hero-turtles-mobile.webp 1x, ./img/roadmap/roadmap-hero-turtles-mobile@2x.webp 2x"
+                     media="(max-width: 479.98px)" type="image/webp">
+                  <source
                      srcset="./img/roadmap/roadmap-hero-turtles-mobile.png 1x, ./img/roadmap/roadmap-hero-turtles-mobile@2x.png 2x"
                      media="(max-width: 479.98px)">
-                  <img src="./img/roadmap/roadmap-hero.png" srcset="./img/roadmap/roadmap-hero@2x.png"
-                     alt="roadmap picture">
+                  <source srcset="./img/roadmap/roadmap-hero.webp 1x, ./img/roadmap/roadmap-hero@2x.webp 2x"
+                     type="image/webp">
+                  <source srcset="./img/roadmap/roadmap-hero.png 1x, ./img/roadmap/roadmap-hero@2x.png 2x">
+                  <img src="./img/roadmap/roadmap-hero.png" alt="roadmap picture" loading="lazy">
                </picture>
                <div class="roadmap-hero__decor decor-hero">
                   <span class="decor-hero__top"></span>
                   <span class="decor-hero__bottom -t"></span>
-                  <img class="decor-hero__left" src="./img/roadmap/roadmap.png" srcset="./img/roadmap/roadmap@2x.png"
-                     alt="picture">
-                  <img class="decor-hero__right" src="./img/roadmap/roadmap.png" srcset="./img/roadmap/roadmap@2x.png"
-                     alt="picture">
+                  <picture class="decor-hero__left">
+                     <source srcset="./img/roadmap/roadmap.webp 1x, ./img/roadmap/roadmap@2x.webp 2x" type="image/webp">
+                     <source srcset="./img/roadmap/roadmap.png 1x, ./img/roadmap/roadmap@2x.png 2x">
+                     <img src="./img/roadmap/roadmap.png" alt="picture" loading="lazy">
+                  </picture>
+                  <picture class="decor-hero__right">
+                     <source srcset="./img/roadmap/roadmap.webp 1x, ./img/roadmap/roadmap@2x.webp 2x" type="image/webp">
+                     <source srcset="./img/roadmap/roadmap.png 1x, ./img/roadmap/roadmap@2x.png 2x">
+                     <img src="./img/roadmap/roadmap.png" alt="picture" loading="lazy">
+                  </picture>
                </div>
             </div>
          </section>
