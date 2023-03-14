@@ -19,15 +19,15 @@
          <div class="header__container">
             <a href="./index.html" class="header__logo"><img src="./img/logo.svg" alt="logo site"></a>
             <div class="header__burger burger">
-               <button type="button" class="burger__button button-burger">
+               <button type="button" class="burger__button button-burger" aria-label="menu burger button">
                   <span></span>
                </button>
                <nav class="burger__navigation">
                   <ul class="burger__list">
-                     <li class="burger__item"><a href="./index.html" class="burger__link">HOME</a></li>
+                     <li class="burger__item"><a href="./index.html" class="burger__link _open">HOME</a></li>
                      <li class="burger__item"><a href="./fraternity.html" class="burger__link">MEET THE FRATERNITY</a>
                      </li>
-                     <li class="burger__item"><a href="./roadmap.html" class="burger__link _open">ROADMAP</a></li>
+                     <li class="burger__item"><a href="./roadmap.html" class="burger__link">ROADMAP</a></li>
                      <li class="burger__item"><a href="./season.html" class="burger__link">SEASON 1</a></li>
                   </ul>
                </nav>
@@ -71,14 +71,14 @@
          <div class="roadmap__map map">
             <div class="map__container">
                <ul class="map__list">
-                  <div class="line"></div>
+                  <li class="line"></li>
                   <li class="map__item">
                      <section class="map__section section-map">
                         <div class="circle"></div>
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
-                              <button type="button" class="header-map__button">
+                              <button type="button" class="header-map__button" aria-label="arrow bottom">
                                  <svg class="header-map__icon">
                                     <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
@@ -139,7 +139,7 @@
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
-                              <button type="button" class="header-map__button">
+                              <button type="button" class="header-map__button" aria-label="arrow bottom">
                                  <svg class="header-map__icon">
                                     <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
@@ -188,7 +188,7 @@
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
-                              <button type="button" class="header-map__button">
+                              <button type="button" class="header-map__button" aria-label="arrow bottom">
                                  <svg class="header-map__icon">
                                     <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
@@ -237,7 +237,7 @@
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
-                              <button type="button" class="header-map__button">
+                              <button type="button" class="header-map__button" aria-label="arrow bottom">
                                  <svg class="header-map__icon">
                                     <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
@@ -286,7 +286,7 @@
                         <div class="section-map__titles">
                            <header class="section-map__header header-map">
                               <span class="header-map__line"></span>
-                              <button type="button" class="header-map__button">
+                              <button type="button" class="header-map__button" aria-label="arrow bottom">
                                  <svg class="header-map__icon">
                                     <use xlink:href="./img/sprite.svg#icon-arrow-bottom"></use>
                                  </svg>
@@ -328,10 +328,17 @@
                   </a>
                   <picture class="invitation__picture">
                      <source
+                        srcset="./img/home/home__invitation/invitation-mobile.webp 1x, ./img/home/home__invitation/invitation-mobile@2x.webp 2x"
+                        media="(max-width: 479.98px)" type="image/webp">
+                     <source
                         srcset="./img/home/home__invitation/invitation-mobile.png 1x, ./img/home/home__invitation/invitation-mobile@2x.png 2x"
                         media="(max-width: 479.98px)">
-                     <img src="./img/home/home__invitation/invitation.png"
-                        srcset="./img/home/home__invitation/invitation@2x.png" alt="">
+                     <source
+                        srcset="./img/home/home__invitation/invitation.webp 1x, ./img/home/home__invitation/invitation@2x.webp 2x"
+                        type="image/webp">
+                     <source
+                        srcset="./img/home/home__invitation/invitation.png 1x, ./img/home/home__invitation/invitation@2x.png 2x">
+                     <img src="./img/home/home__invitation/invitation.png" alt="picrure invitation" loading="lazy">
                   </picture>
                   <button type="button" class="invitation__button button-buy">BUY NOW</button>
                </div>
@@ -347,49 +354,49 @@
             </path>
          </svg>
       </button>
-   <footer class="footer">
-      <div class="footer__container">
-         <a href="./index.html" class="footer__logo"><img src="./img/logo-footer.svg" alt="logo footer"></a>
-         <ul class="footer__social-list social-list">
-            <li class="social-list__item">
-               <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" class="social-list__link"
-                  aria-label="link to discord">
-                  <svg>
-                     <use xlink:href="./img/sprite.svg#icon-discord"></use>
-                  </svg>
-               </a>
-            </li>
-            <li class="social-list__item">
-               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-list__link"
-                  aria-label="link to twitter">
-                  <svg>
-                     <use xlink:href="./img/sprite.svg#icon-twitter"></use>
-                  </svg>
-               </a>
-            </li>
-            <li class="social-list__item">
-               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-list__link"
-                  aria-label="link to instagram">
-                  <svg>
-                     <use xlink:href="./img/sprite.svg#icon-instagram"></use>
-                  </svg>
-               </a>
-            </li>
-            <li class="social-list__item">
-               <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-list__link"
-                  aria-label="link to tiktok">
-                  <svg>
-                     <use xlink:href="./img/sprite.svg#icon-tiktok"></use>
-                  </svg>
-               </a>
-            </li>
-         </ul>
-         <p class="footer__text">
-            2023 . All Right Reserved
-         </p>
-         <span class="footer__decor"></span>
-      </div>
-   </footer>
+      <footer class="footer">
+         <div class="footer__container">
+            <a href="./index.html" class="footer__logo"><img src="./img/logo-footer.svg" alt="logo footer"></a>
+            <ul class="footer__social-list social-list">
+               <li class="social-list__item">
+                  <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" class="social-list__link"
+                     aria-label="link to discord">
+                     <svg>
+                        <use xlink:href="./img/sprite.svg#icon-discord"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-list__item">
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-list__link"
+                     aria-label="link to twitter">
+                     <svg>
+                        <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-list__item">
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                     class="social-list__link" aria-label="link to instagram">
+                     <svg>
+                        <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="social-list__item">
+                  <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-list__link"
+                     aria-label="link to tiktok">
+                     <svg>
+                        <use xlink:href="./img/sprite.svg#icon-tiktok"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+            <p class="footer__text">
+               2023 . All Right Reserved
+            </p>
+            <span class="footer__decor"></span>
+         </div>
+      </footer>
    </div>
    <script src="js/script.js"></script>
    <script src="js/line.js"></script>
