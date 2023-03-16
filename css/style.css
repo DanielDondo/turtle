@@ -5679,6 +5679,10 @@ h6 {
     height: 5.9375rem;
   }
 }
+.decor-hero__left img, .decor-hero__right img {
+  max-width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 29.99875em) and (min-width: 78.125em) {
   .decor-hero__left, .decor-hero__right {
     bottom: 0.0000000625rem;

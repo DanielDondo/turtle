@@ -115,6 +115,10 @@
       @include adaptiveValue("width", 221, 95);
       @include adaptiveValue("height", 221, 95);
       z-index: -2;
+      img {
+         max-width: 100%;
+         height: auto;
+      }
       //===============================================================================================================
       @media screen and (max-width: $mobileSmall) {
          @include adaptiveValue("bottom", 0, -80);
